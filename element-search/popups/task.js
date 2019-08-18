@@ -10,6 +10,7 @@ firstCloseFormElement.onclick = function() {
 const changeButton = document.querySelector(".show-success");
 const changedButton = document.getElementById("modal_success");
 changeButton.onclick = function() {
+    form.classList.remove("modal_active");
     changedButton.classList.add("modal_active");
 }
 
