@@ -23,9 +23,7 @@ button.addEventListener("click", function(event) {
           userNumber.textContent = localStorage.user_id
           welcomeWindow.classList.add("welcome_active");          
           }else if(parsedSuccess === false) {
-            document.querySelector(".signin").classList.remove("signin_active");
-            welcomeWindow.classList.add("welcome_active");
-            welcomeWindow.textContent = "Неверный логин/пароль";
+            alert("Неверный логин/пароль");
           }
       }
     })
